@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="input">
+    <div class="label">Mobile number</div>
+    <input type="text" [(ngModel)]="mobileNumber" />
+    <div class="err-msg" *ngIf="isSubmitted && mobileNumber == undefined">
+      Please enter mobile number
+    </div>
+  </div>
+  <div class="input">
+    <div class="label">Password</div>
+    <input type="password" [(ngModel)]="password" />
+    <div class="err-msg" *ngIf="isSubmitted && password == undefined">
+      Please enter password
+    </div>
+  </div>
+  <div class="err-msg" *ngIf="mobileNumber && password">{{ errMsg }}</div>
+  <div class="btn-container">
+    <button class="btn btn-primary" (click)="save()">Save</button>
+  </div>
+</div>

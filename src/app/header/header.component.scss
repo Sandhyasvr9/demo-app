@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    font-family: sans-serif;
+    background: #3064d2;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 20px;
+
+    .right{
+        display: flex;
+        align-items:center;
+        .menu-item{
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    }
+    .active{
+        font-weight: 600;
+    }
+}

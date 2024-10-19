@@ -1,0 +1,19 @@
+thead, tbody, tfoot, tr, td, th{
+    border: 1px solid #d8d5d5;
+    padding: 5px;
+}
+td{
+    font-size: 12px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
